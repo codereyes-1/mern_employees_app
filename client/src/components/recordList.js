@@ -34,7 +34,7 @@ export default class RecordList extends Component {
 //  // This method will get the data from the database.
   componentDidMount() {
     axios
-      .get("${window.location.hostname}:3000/record/")
+      .get("/record/")
       .then((response) => {
         this.setState({ records: response.data });
       })
@@ -45,7 +45,7 @@ export default class RecordList extends Component {
 
   // This method will get the data from the database.
 //  componentDidMount() {
-//    request.get("${window.location.hostname}:3000record")
+//    request.get("record")
 //      .then(response => response.json())
 //      .then(data => this.setState({ records: data }))
 //       this.setState({ records: data });
@@ -57,7 +57,7 @@ export default class RecordList extends Component {
 
 //  // This method will delete a record based on the method
   deleteRecord(id) {
-    axios.delete("${window.location.hostname}:3000/" + id).then((response) => {
+    axios.delete("/" + id).then((response) => {
       console.log(response.data);
     });
 
@@ -68,7 +68,7 @@ export default class RecordList extends Component {
 
   // This method will delete a record based on the method
 //  deleteRecord(id) {
-//    fetch("${window.location.hostname}:3000" + id, { method: 'DELETE'})
+//    fetch("" + id, { method: 'DELETE'})
 //    .then((response) => {
 //      console.log(response.data);
 //    });

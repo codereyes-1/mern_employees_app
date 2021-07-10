@@ -24,7 +24,7 @@ class Edit extends Component {
 //   This will get the record based on the id from the database.
   componentDidMount() {
     axios
-      .get("${window.location.hostname}:3000/record/" + this.props.match.params.id)
+      .get("/record/" + this.props.match.params.id)
       .then((response) => {
         this.setState({
           person_name: response.data.person_name,
@@ -38,7 +38,7 @@ class Edit extends Component {
   }
 
 //  componentDidMount() {
-//    fetch("${window.location.hostname}:3000/record/" + this.props.match.params.id)
+//    fetch("/record/" + this.props.match.params.id)
 //      .then((response) => {
 //        this.setState({
 //          person_name: response.data.person_name,
@@ -83,7 +83,7 @@ class Edit extends Component {
     // This will send a post request to update the data in the database.
     axios
       .post(
-        "${window.location.hostname}:3000/update/" + this.props.match.params.id,
+        "/update/" + this.props.match.params.id,
         newEditedperson
       )
       .then((res) => console.log(res.data));
