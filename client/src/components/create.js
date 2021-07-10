@@ -50,10 +50,10 @@ export default class Create extends Component {
     };
 
     axios
-      .post("https://mern-employees.herokuapp.com:3000record/add", newperson)
+      .post("${window.location.hostname}:3000/record/add", newperson)
       .then((res) => console.log(res.data));
 
-//    fetch("https://mern-employees.herokuapp.com:3000record/add", newperson,{
+//    fetch("${window.location.hostname}:3000record/add", newperson,{
 //  method: 'POST',
 //  qs: { format: "JSON"},
 //  headers: {
