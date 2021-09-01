@@ -10,10 +10,10 @@
 /coverage
 
 # production
-/build
+client/build
 
 # conf
-/server/routes/config.env
+config.env
 
 # misc
 .DS_Store
