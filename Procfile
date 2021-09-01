@@ -1,1 +1,1 @@
-web: gunicorn app:mern-employee-app
+web: gunicorn app:app
