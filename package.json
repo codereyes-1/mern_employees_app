@@ -8,8 +8,6 @@
     "start": "nodemon server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "install-client": "npm install client"
-    //"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run install-client && npm run build",
-    //"client": "cd client && npm start"
   },
   "keywords": [],
   "author": "",
