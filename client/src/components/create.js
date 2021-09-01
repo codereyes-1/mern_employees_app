@@ -50,7 +50,7 @@ export default class Create extends Component {
     };
 
     axios
-      .post("/record/add", newperson)
+      .post("http://localhost:5000/record/add", newperson)
       .then((res) => console.log(res.data));
 
 //    fetch("record/add", newperson,{
@@ -76,6 +76,7 @@ export default class Create extends Component {
     return (
       <div style={{ marginTop: 20 }}>
         <h3>Create New Record</h3>
+        <h6>Click top left "MongoDataBase" button to return and see your new entry.</h6>
         <form onSubmit={this.onSubmit}>
           <div className="form-group">
             <label>Name of the person: </label>

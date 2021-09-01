@@ -34,7 +34,7 @@ export default class RecordList extends Component {
 //  // This method will get the data from the database.
   componentDidMount() {
     axios
-      .get("/record/")
+      .get("http://localhost:5000/record/")
       .then((response) => {
         this.setState({ records: response.data });
       })
@@ -57,7 +57,7 @@ export default class RecordList extends Component {
 
 //  // This method will delete a record based on the method
   deleteRecord(id) {
-    axios.delete("/" + id).then((response) => {
+    axios.delete("http://localhost:5000/" + id).then((response) => {
       console.log(response.data);
     });
 
@@ -97,10 +97,9 @@ export default class RecordList extends Component {
       <div>
         <h2>Julio Corp Software </h2>
         <h3>Employee List </h3>
-        <h7>Add yourself as employee in my app!</h7>
+        <h6>Add yourself as employee in my app!</h6>
         <h6>Make page wider if you do not see "Create Record" button next to MongoDataBase. </h6>
-        <h7>Click top left "MongoDataBase" button to return to this page after adding yourself as an employee.</h7>
-        <h7></h7>
+        <h6>Click top left "MongoDataBase" button to return to this page after adding yourself as an employee.</h6>
         <table className="table table-striped" style={{ marginTop: 20 }}>
           <thead>
             <tr>
