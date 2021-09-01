@@ -12,6 +12,9 @@
 # production
 /build
 
+# conf
+/server/routes/config.env
+
 # misc
 .DS_Store
 .env.local
