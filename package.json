@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run client/build",
-    "start": "nodemon server",
+    "build": "cd client/ && npm install && run npm build",
+    "start": "node server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install-client": "npm install client"
   },
   "keywords": [],
   "author": "",
