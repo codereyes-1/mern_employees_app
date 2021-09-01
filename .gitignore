@@ -13,7 +13,7 @@
 client/build
 
 # conf
-server/routes/config.env
+server/config.env
 
 # misc
 .DS_Store
