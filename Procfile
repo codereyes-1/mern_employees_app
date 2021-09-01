@@ -1,1 +1,1 @@
-web: gunicorn mern-employee-app:app
+web: gunicorn client.src.app:app
