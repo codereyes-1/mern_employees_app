@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run client/build",
-    "start": "cd server && nodemon server.js",
+    "start": "nodemon server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "install-client": "npm install client"
   },
