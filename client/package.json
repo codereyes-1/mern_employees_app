@@ -30,8 +30,6 @@
   "browserslist": {
     "production": [
       ">0.2%",
-      "not dead",
-      "not i.e <= 11",
       "not op_mini all"
     ],
     "development": [
