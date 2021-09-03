@@ -4,12 +4,12 @@
   "description": "",
   "main": "client/index.js",
   "scripts": {
-    "start": "node server/server.js",
+    "start": "node server.js",
     "client-install": "npm install --prefix client",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-post-build": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+//    "heroku-post-build": "NPM_CONFIG_PRODUCTION=false npm install --prefixrefix client && npm run build --prefix client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
