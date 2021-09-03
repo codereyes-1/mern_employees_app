@@ -2,7 +2,7 @@
   "name": "employee-app",
   "version": "1.0.0",
   "description": "",
-  "main": "client/index.js",
+  "main": "server/server.js",
   "scripts": {
     "start": "node server.js",
     "client-install": "npm install --prefix client",
