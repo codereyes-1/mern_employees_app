@@ -34,7 +34,7 @@ export default class RecordList extends Component {
 //  // This method will get the data from the database.
   componentDidMount() {
     axios
-      .get("https://employee-app-mern.herokuapp.com/record/")
+      .get("http://localhost:5000/record/")
       .then((response) => {
         this.setState({ records: response.data });
       })
@@ -57,7 +57,7 @@ export default class RecordList extends Component {
 
 //  // This method will delete a record based on the method
   deleteRecord(id) {
-    axios.delete("https://employee-app-mern.herokuapp.com/" + id).then((response) => {
+    axios.delete("http://localhost:5000/" + id).then((response) => {
       console.log(response.data);
     });
 
