@@ -24,7 +24,7 @@ class Edit extends Component {
 //   This will get the record based on the id from the database.
   componentDidMount() {
     axios
-      .get("http://localhost:5000/record/" + this.props.match.params.id)
+      .get("https://employee-app-mern.herokuapp.com/record/" + this.props.match.params.id)
       .then((response) => {
         this.setState({
           person_name: response.data.person_name,
@@ -83,7 +83,7 @@ class Edit extends Component {
     // This will send a post request to update the data in the database.
     axios
       .post(
-        "http://localhost:5000/update/" + this.props.match.params.id,
+        "https://employee-app-mern.herokuapp.com/update/" + this.props.match.params.id,
         newEditedperson
       )
       .then((res) => console.log(res.data));
