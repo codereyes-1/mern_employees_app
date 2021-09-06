@@ -115,11 +115,11 @@ export default class Create extends Component {
                 type="radio"
                 name="priorityOptions"
                 id="priorityMedium"
-                value="Junior"
+                value="Associate"
                 checked={this.state.person_level === "Associate"}
                 onChange={this.onChangePersonLevel}
               />
-              <label className="form-check-label">Junior</label>
+              <label className="form-check-label">Associate</label>
             </div>
             <div className="form-check form-check-inline">
               <input
