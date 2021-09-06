@@ -116,7 +116,7 @@ export default class Create extends Component {
                 name="priorityOptions"
                 id="priorityMedium"
                 value="Junior"
-                checked={this.state.person_level === "Junior"}
+                checked={this.state.person_level === "Associate"}
                 onChange={this.onChangePersonLevel}
               />
               <label className="form-check-label">Junior</label>
